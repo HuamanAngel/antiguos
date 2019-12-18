@@ -23,6 +23,8 @@ header a.select-banner{
 
 hr{
     border-color: red;
+    border-width: 2px;
+    border-radius: 5px;
 }
 
 div ul{
@@ -88,6 +90,28 @@ div ul{
         left: 60%;
     }
 }
+    @media only screen and (max-width:736px){
+        @keyframes texto-desplazar{
+            0%{
+                color: red;
+        
+                left: 0%;
+            }
+            40%{
+                color: blue;
+                left: 10%;
+            }
+            60%{
+                color: chocolate;
+                left: 20%;
+            }
+            100%{
+                color: darkgreen;
+                left: 30%;
+            }
+        }
+            
+    }
 
 #label-text-desplazar{
 
@@ -101,7 +125,6 @@ div ul{
 }
 
 .content-header{
-    height: 400px;
     width: 100%;
     position: relative;
     display: flex;
@@ -109,11 +132,13 @@ div ul{
     background-image: url("../img/ImagenOpaco1.jpg");
     background-size: 100% 100%;
 }
+    @media only screen and (max-width:736px){
+    }
 
 .content-header::before{
     content: "";
     width: 100%;
-    height: 400px;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -158,6 +183,8 @@ main{
 
 .main-content{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
 }
 
 .main-content> section{
@@ -165,18 +192,30 @@ main{
 }
 
 .publicidad-1{
-    background-image: url();
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 .publicidad-1 img{
     width: 90%;
-    height: 80%;
 }
+    @media only screen and (max-width:736px){
+        .main-content{
+            flex-direction: column;
+
+        }
+        .main-content>section{
+            width: 100%;
+        }
+        .publicidad-1 img{
+            width:50%;
+        }
+    }
+    
 
 .series-cotent{
     display: flex;
@@ -242,6 +281,11 @@ main{
         transition: 1s;
         opacity: 0.4;
     }
+    @media only screen and (max-width:736px){
+        .series-cotent>section{
+            width: 45%;
+        }
+    }
 
 h1.texto-series{
     font-size: 35px;
@@ -270,3 +314,10 @@ footer{
 footer >ul{
     list-style-type: none;
 }
+
+    @media only screen and (max-width:736px){
+        footer{
+            flex-direction: column;
+            text-align: center;
+        }        
+    }
