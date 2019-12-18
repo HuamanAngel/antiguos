@@ -52,6 +52,8 @@ div ul{
             text-decoration-style: dashed;
             text-decoration-line: overline;
             text-shadow: -1px 1px 2px;
+            cursor: pointer;
+
         }
 
         div.list-menu-header>li:hover{
@@ -147,4 +149,124 @@ div ul{
 main{
     margin: auto;
     width: 90%;
+    border-width: 4px;
+    border-radius: white;
+    border-style: double;
+    border-radius: 20px;
+    background-color: rgb(190, 190, 190);
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content> section{
+    width: 50%;
+}
+
+.publicidad-1{
+    background-image: url();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicidad-1 img{
+    width: 90%;
+    height: 80%;
+}
+
+.series-cotent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.series-cotent>section{
+    width: 30%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.section-1{
+    background-image: url("../img/imagen-serie.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    transition: 1s;    
+}
+.section-2{
+    background-image: url("../img/imagen-serie.jpg");
+    background-size: 100% 100%;
+    position: relative;    
+    transition: 1s;
+}
+.section-3{
+    background-image: url("../img/imagen-serie.jpg");
+    background-size: 100% 100%;
+    position: relative;    
+    transition: 1s;
+}
+.section-4{
+    background-image: url("../img/imagen-serie.jpg");
+    background-size: 100% 100%;
+    position: relative;    
+    transition: 1s;
+}
+.section-5{
+    background-image: url("../img/imagen-serie.jpg");
+    background-size: 100% 100%;
+    position: relative;    
+    transition: 1s;
+    
+}
+.section-1::before,.section-2::before,.section-3::before,.section-4::before,.section-5::before{
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(90deg,red,blue);
+    opacity: 0.5;
+}
+
+    .section-1:hover,.section-2:hover,.section-3:hover,.section-4:hover,.section-5:hover{
+        transition: 1s;
+        opacity: 0.4;
+    }
+
+h1.texto-series{
+    font-size: 35px;
+    color: white;
+    position: relative;
+}
+
+footer{
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+
+    border-width: 5px;
+    border-style: double;
+    border-color: white;
+   
+    color:white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+footer >ul{
+    list-style-type: none;
 }
