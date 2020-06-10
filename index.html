@@ -2,9 +2,12 @@
     <head>
         <title>Inicio</title>
         <link href="css/styleIndex.css" rel="stylesheet">   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+        <meta name="viewport" content="width=device-width ,initial-scale=0.8">
+        <meta charset="utf-8">		
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+	</head>
+    <body >
+        
        <header>
            <div>
                 <a class="select-banner" href="index.html"><img src="img/BannerLogo.png" width="100%"></a>
@@ -14,66 +17,73 @@
            <div class="list-select">
                 <ul>
                     <div class="list-menu-header">
-                        <li><a>Naruto</a></li>
-                        <li><a>Los Simpson</a></li>
-                        <li><a>Mafalda</a></li>
-                        <li><a>Connan</a></li>
-                        <li><a>Himan</a></li>
-                        <li><a>La banda del gato</a></li>    
-                    </div>
+                        <li><a href="seriesCategorias/LosSimpson.html">Naruto</a></li>
+                        <li><a href="seriesCategorias/LosSimpson.html">Los Simpson</a></li>
+                        <li><a href="seriesCategorias/LosSimpson.html">Mafalda</a></li>
+                        <li><a href="seriesCategorias/LosSimpson.html">Connan</a></li>
+                        <li><a href="seriesCategorias/LosSimpson.html">Himan</a></li>
+                        <li><a href="seriesCategorias/LosSimpson.html">La banda del gato</a></li>    
+                   </div>
                 </ul>
            </div>
-           <div style="border-style: solid; border-width: 2px; border-color: black;">
-               ANUNCIO :<label id="label-text-desplazar">Bienvenidos a todos</label> 
+           <div style="border-style: solid; border-width: 2px; border-color: black; overflow: hidden;">
+               <label style="color: wheat;">ANUNCIO : </label><label id="label-text-desplazar">Bienvenidos a todos</label>
            </div>
            <hr/>
+
            <div class="content-header">
                 <div class="content-header-1">
+                    
                 </div>
-                <div class="content-header-2">
-                    <h1>Himan</h1>
-                    <p style="font-size: 20px;">Es una serie dedicada para enseñar a jovenes y niños, intentado otorgar valores morales.
-                    <br/>Lamentablemente la serie dejo de producirse en el año 1999.
+                <div class="content-header-2" >
+                    <h1 id="titulo-header">Los Simpson</h1>
+                    <p id="parrafo-header" style="font-size: 20px;">Los simpson es una serie que parodia las costumbres de la clase media norteamericada
+                    <br>Ya puedes ver todos los episodios de los Simpson
                     <hr style="width: 80%;"/><br>
-                        <button class="boton-info">Mas información</button>
-                        <br>
-                        <br>
+                    <button id="valor-button"class="boton-info">Mas información</button>
+                    <br>
+                    <br>
                     <hr style="width: 80%;"/>
                     </p>
                 </div>
-            </div>
-        </header> 
+                <aside class="circle-header" style="background-color: teal;"></aside>
+                <aside class="circle-header" style="right: 45%;"></aside>
+                <aside class="circle-header" style="right: 40%;"></aside>
 
-        <main>
+            </div>
+
+        </header> 
+        <br>
+        <main class="pag-index">
             <div class="main-content">
                 <section class="somos-1">
-                    <h1>Somos</h1>
+                    <h1 style="text-align: center;">Somos</h1>
                     <br>
-                    <p>Somos una pagina web que nos encargamos de recopilar, y regresar de la muerte series antiguas y/o olvidadad. Luchamos contra el olvido y nuestra arma para combatir es esta humilde pagina, talvez no muy buena ,peeeeeeero cumple su funcion </p>
+                    <p style="text-align: center;">Somos una pagina web que nos encargamos de recopilar, y regresar de la muerte series antiguas y/o olvidadad. Luchamos contra el olvido y nuestra arma para combatir es esta humilde pagina, talvez no muy buena ,peeeeeeero cumple su funcion </p>
                     <br>
-                    <h2>!Distrutenlo¡ !No olvidar¡ !Si nostalgia ¡</h2>
+                    <h2 style="text-align: center;">!Distrutenlo¡ !No olvidar¡ !Si nostalgia ¡</h2>
                 </section>
                 <section class="publicidad-1">
                     <img src="img/publicidadIlicita.png">
                 </section>
             </div>
-            <h1>Series</h1>
+            <h1 style="text-align: center;">Series</h1>
 
             <div class="series-cotent">
                 <section class="section-1">
                     <h1 class="texto-series">Naruto</h1>                   
                 </section> 
                 <section class="section-2">
-                    <h1 class="texto-series">Los Simpson</h1>                   
+                    <h1 class="texto-series">Himan</h1>                   
                 </section>      
                 <section class="section-3">
-                    <h1 class="texto-series">Mafalda</h1>                   
+                    <h1 class="texto-series">Conan</h1>                   
                 </section> 
                 <section class="section-4">
-                    <h1 class="texto-series">Conan</h1>                   
+                    <h1 class="texto-series">Mafalda</h1>                   
                 </section>
                 <section class="section-5">
-                    <h1 class="texto-series">Himan</h1>                   
+                    <h1 class="texto-series">Topo Gigio</h1>                   
                 </section>                
             </div>
         </main>
@@ -102,5 +112,6 @@
        
             </ul>
         </footer>
+        <script type="text/javascript" src="js/jsIndex.js"></script>
     </body>
 </html>

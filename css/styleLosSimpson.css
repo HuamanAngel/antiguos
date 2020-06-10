@@ -1,0 +1,117 @@
+.pag-simpson{
+    margin: auto;
+    width: 90%;
+    border-width: 4px;
+    border-color: white;
+    border-style: double;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.pag-simpson>section{
+    border-width: 0px 1px 0px 1px;
+    
+    border-style: solid;
+    border-color: black;
+    border-radius: 2%;
+}
+
+.section-1-temp{
+    width: 20%;
+}
+    .section-1-temp h3{
+        margin-left: 10px;
+    }
+    .section-1-temp h3.h3-pointer{
+        cursor: pointer;
+    }
+
+    .section-1-temp h3.h3-pointer:hover{
+        background-color: blue;
+        color: white;
+    }
+
+    .section-1-temp ul{
+        list-style-type: none;
+        padding: 0px;
+    }
+        .section-1-temp ul>hr{
+            border-width: 1px;
+            border-color: red;
+            border-style: solid;
+            width: 90%;
+            text-align: center;
+        }
+
+        .section-1-temp ul>li{
+            padding: 4px;
+            cursor: pointer;
+            margin-left: 12px;
+        }
+
+        .section-1-temp ul>li:hover{
+            background-color: rgb(74, 74, 255);
+            opacity: 0.8;
+            color: white;
+        }
+.section-2-capi{
+    width: 45%;
+}
+    .section-2-capi ul{
+        list-style-type: none;
+        padding: 0px;
+    }
+
+        .section-2-capi ul>li{
+            padding: 8px;
+        }
+        .section-2-capi ul>li:hover{
+            opacity: 0.8;
+        }
+        .section-2-capi ul li>a{
+            transition: 0.5s;
+        }
+        .section-2-capi ul li>a:hover{
+            color: blue;
+            transition: 1s;
+            font-size: 20px;
+        }
+        .section-2-capi ul>li:nth-child(2n-1){
+            background-color: rgb(176, 176, 217);
+        }
+        .section-2-capi ul>li:nth-child(2n){
+            background-color: rgb(216, 216, 215);
+        }
+        
+            .section-2-capi ul li>a{
+                text-decoration: none;
+            }
+
+.section-3-anun{
+    width: 20%;
+    text-align: center;
+}
+    .section-3-anun>img{
+        width: 80%;
+        cursor: pointer;
+    }
+
+@media screen and (max-width:736px){
+    .pag-simpson{
+        flex-direction: column;
+    }
+    .section-1-temp{
+        width: 100%;
+        text-align: center;
+    }
+    .section-2-capi{
+        width: 100%;
+    }
+    .section-3-anun{
+        width: 100%;
+    }
+}

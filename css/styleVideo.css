@@ -1,0 +1,293 @@
+main.pag-video{
+    margin: auto;
+    width: 90%;
+    border-width: 4px;
+    border-radius: white;
+    border-style: double;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+    .columna-1{
+        width: 70%;
+    }
+    .columna-2{
+        width: 30%;
+        text-align: center;
+        
+    }
+        .columna-2 img{
+            width: 80%;
+        }
+    @media screen and (max-width:736px){
+        main.pag-video{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .columna-2{
+            width: 100%;
+        }
+        .columna-1{
+            width: 100%;
+        }
+    }
+
+
+.div-header-video{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+
+@media screen and (max-width:736px){
+    .div-header-video{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .div-header-video .section-1-video{
+        width: 100%;
+        position: relative;
+    }
+    .div-header-video .section-2-video{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.video-main{
+    position: relative;
+    top:0px;
+    left: 8%;
+    width: 80%;
+}
+
+    .section-1-video{
+        width: 90%;
+        text-align: center;
+    }
+    .section-2-video{
+        width: 10%;
+
+    }
+
+    @media screen and (max-width:736px){
+        .video-main{
+            top:0px;
+            left: 5%;        
+            width: 90%;
+        }
+    }
+
+
+.botones-control{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+    
+    .botones-control>label:nth-child(1){
+        background-color: rgb(126, 126, 126);
+        width: 30%;
+        border-radius: 100% 0px 0px 100%;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding: 20px;
+        margin: auto;
+        cursor: pointer;
+        position: relative;
+        animation-name: btn-animation;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    
+    }
+    .botones-control>label:nth-child(2){
+        width: 40%;
+    }
+    .botones-control>label:nth-child(3){
+        background-color: rgb(126, 126, 126);
+        width: 30%;
+        border-radius: 0px 100% 100% 0px;
+        padding: 20px;
+        margin: auto;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        position: relative;
+        animation-name: btn-animation;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+    }
+    .botones-control>label:nth-child(1)::before .botones-control>label:nth-child(3)::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg,transparent,white,black);
+        position: absolute;
+        opacity: 0.5;
+        top: 0px;
+        left: 0px;
+ 
+    }
+
+ 
+    @keyframes btn-animation{
+        from{
+            background: linear-gradient(180deg,transparent,black,black);
+            
+            top: 0px;
+            left: 0px;
+        }
+        to{
+            background: linear-gradient(180deg,transparent,black,black);
+            top: 10px;
+            left: 0px;
+        }
+    }
+
+.opciones-main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .opciones-main>button{
+        padding: 10px;
+        font-size: 15px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        background-color: black;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .opciones-main>button:hover{
+        opacity: 0.6;
+    }
+
+
+
+.servidores-main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    width:50%;
+    min-width: 350px;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: rgb(212, 212,212);
+    position: relative;
+    overflow: hidden;
+}
+
+    @media screen and (max-width:736px){
+        .servidores-main{
+            width: 95%;
+            overflow-x: scroll;
+        }   
+        .servidores-main ul{
+            width: 100%;
+
+        }
+    }
+.servidores-main ul{
+    list-style-type: disc;
+    list-style-position: outside;    
+}
+
+.servidores-main ul >li{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+.servidores-main ul >li:nth-child(2n){
+    background-color:rgb(223, 223, 223);
+}
+.servidores-main ul >li:nth-child(2n-1){
+    background-color: rgb(181, 181, 181);
+}
+
+
+    .servidores-main ul>li:hover{
+        background-color:rgb(126, 126, 126) ;
+        color: yellow;
+    }
+
+.footer-videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#episodios-video{
+    text-align: center;
+    width: 200px;
+    background-color: blue;
+    color: wheat;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    animation-name: rotarText;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+    @keyframes rotarText{
+        from{
+            transform: rotateX(360deg);
+        }
+        to{
+            transform: rotateX(180deg);
+        }
+    }
+.episodio-footer-video{
+    display: flex;
+    flex-direction: column;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    font-size: 20px;
+}
+
+    .episodio-footer-video >li{
+        padding: 5px;
+        list-style-type: none;
+        cursor: pointer;
+    }
+    .episodio-footer-video>li:nth-child(2n){
+        background-color:rgb(223, 223, 223);
+    }
+    .episodio-footer-video>li:nth-child(2n-1){
+        background-color: rgb(181, 181, 181);
+    }
+        .episodio-footer-video>li:hover{
+            opacity: 0.6;
+
+        }
